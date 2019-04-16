@@ -187,24 +187,3 @@ for packet in testpackets[:]:
                           (matchtypestring, start_offset, l_arr[patt_idx], coverage,
                          ''.join([chr(c) for c in p_arr[patt_idx] if c>=0]), packet))
 
-
-#BACKWARDMATCH offset: 7   Pattern size: 15  Coverage: 0.53 Patt: malicious_stuff      Pkt: 3gsglhjnerotj dsfgöjklserjb
-#FORWARDMATCH  offset: 5   Pattern size: 15  Coverage: 0.67 Patt: malicious_stuff      Pkt: ious_stuff sdfishlfgskh sdf
-#FORWARDMATCH  offset: 3   Pattern size: 6   Coverage: 0.50 Patt: SECRET               Pkt: RET dfghg                  
-#BACKWARDMATCH offset: 2   Pattern size: 6   Coverage: 0.67 Patt: SECRET               Pkt: sldhgsfg SECR              
-#BACKWARDMATCH offset: 3   Pattern size: 7   Coverage: 0.57 Patt: SECRETS              Pkt: sldhgsfg SECR              
-#FORWARDMATCH  offset: 2   Pattern size: 5   Coverage: 0.60 Patt: SRTPT                Pkt: TPT sdgfg heml             
-#BACKWARDMATCH offset: 3   Pattern size: 7   Coverage: 0.57 Patt: hemligt              Pkt: TPT sdgfg heml             
-#FORWARDMATCH  offset: 3   Pattern size: 7   Coverage: 0.57 Patt: HEXLIFY              Pkt: LIFY test hex              
-#BACKWARDMATCH offset: 3   Pattern size: 7   Coverage: 0.57 Patt: HEXLIFY              Pkt: sfadf hextes HEXL          
-#FORWARDMATCH  offset: 10  Pattern size: 21  Coverage: 0.52 Patt: FYYou are connectedHE Pkt: connectedHEjkhgaa          
-#BACKWARDMATCH offset: 9   Pattern size: 21  Coverage: 0.57 Patt: FYYou are connectedHE Pkt: sdafhjhksdfFYYou are co    
-#BACKWARDMATCH offset: 2   Pattern size: 4   Coverage: 0.50 Patt: ii²                 Pkt: b'\x88\x12\x8ci'           
-#MISSING-MATCH pktpos: 48  Pattern size: 6   Coverage: 0.67 Patt: SECRET               Pkt: This is a string which also
-#MISSING-MATCH pktpos: 28  Pattern size: 6   Coverage: 0.50 Patt: SECRET               Pkt: Should work also in the end
-#MISSING-MATCH pktpos: 28  Pattern size: 7   Coverage: 0.57 Patt: SECRETS              Pkt: Should work also in the end
-#MISSING-MATCH pktpos: 0   Pattern size: 7   Coverage: 0.57 Patt: hemligt              Pkt: h?m?i?t and in the beginnin
-#MISSING-MATCH pktpos: 18  Pattern size: 7   Coverage: 0.57 Patt: hemligt              Pkt: end missing works ??m?igt  
-#MISSING-MATCH pktpos: 0   Pattern size: 6   Coverage: 0.67 Patt: SECRET               Pkt: ??CRET this line starts wit
-#BACKWARDMATCH offset: 3   Pattern size: 7   Coverage: 0.57 Patt: hemligt              Pkt: a LONGP?????N and another t
-#MISSING-MATCH pktpos: 2   Pattern size: 11  Coverage: 0.55 Patt: LONGPATTERN          Pkt: a LONGP?????N and another t
